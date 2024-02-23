@@ -1,0 +1,8 @@
+.github/
+.git/
+.gitignore
+README.md
+CHANGELOG.md
+LICENSE
+creds.example.json
+types-dnscontrol.d.ts

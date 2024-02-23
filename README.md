@@ -174,9 +174,16 @@ D("noclocks.dev", REG_PORKBUN, DnsProvider(DSP_PORKBUN),
 
 ## DNS Records
 
-| Type  |                     Host                      |             Value              | TTL | Options |              Notes              |
-|:-----:|:---------------------------------------------:|:------------------------------:|:---:|:-------:|:-------------------------------:|
-| ALIAS |                 noclocks.dev                  |       pixie.porkbun.com        | 60  |         |                                 |
-| CNAME |                *.noclocks.dev                 |       pixie.porkbun.com        | 600 |         |                                 |
-| CNAME |               docs.noclocks.dev               |      noclocks.github.io.       | 600 |         | `CNAME` record for GitHub Pages |
-|  TXT  | _github-pages-challenge-noclocks.noclocks.dev | 8c88c3f5791a75585aedc0a0e821fb | 600 |         |   GitHub Domain Verification    |
+*As of 2024-02-23:*
+
+| Type  |                Host                |              Value               | TTL | Options |               Notes                |
+|:-----:|:----------------------------------:|:--------------------------------:|:---:|:-------:|:----------------------------------:|
+| ALIAS |                `@`                 |       `pixie.porkbun.com.`       | 60  |         |                                    |
+| CNAME |                `*`                 |       `pixie.porkbun.com.`       | 600 |         |                                    |
+| CNAME |               `www`                |         `noclocks.dev.`          | 600 |         | `CNAME` record for "www" subdomain |
+| CNAME |               `docs`               |      `noclocks.github.io.`       | 600 |         |  `CNAME` record for GitHub Pages   |
+|  TXT  | `_github-pages-challenge-noclocks` | `8c88c3f5791a75585aedc0a0e821fb` | 600 |         |     GitHub Domain Verification     |
+
+***
+
+No Clocks, LLC | 2024

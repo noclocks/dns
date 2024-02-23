@@ -6,6 +6,19 @@
 
 ## Contents
 
+- [No Clocks, LLC Domain Name System Records](#no-clocks-llc-domain-name-system-records)
+  - [Contents](#contents)
+  - [Overview](#overview)
+  - [DNSControl](#dnscontrol)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Docker](#docker)
+    - [GitHub Actions](#github-actions)
+  - [Configuration](#configuration)
+    - [creds.json](#credsjson)
+    - [dnsconfig.js](#dnsconfigjs)
+  - [DNS Records](#dns-records)
+
 ## Overview
 
 No Clocks, LLC utilizes [Porkbun](https://porkbun.com/) as our DNS Provider and Registrar.
@@ -18,8 +31,6 @@ DNSControl is a system for maintaining DNS zones. It has two parts: a domain spe
 DNS zones plus software that processes the DSL and pushes the resulting zones to DNS providers.
 
 It can send the same DNS records to multiple providers.
-
-It even generates the most beautiful `BIND` zone files.
 
 It runs anywhere Go runs (Linux, macOS, Windows).
 
@@ -63,7 +74,7 @@ dnscontrol push
 docker run --rm -it -v "$(pwd):/dns"  ghcr.io/stackexchange/dnscontrol preview
 ```
 
-## GitHub Actions
+### GitHub Actions
 
 This repository is configured to run the `dnscontrol` commands using GitHub Actions.
 
@@ -72,30 +83,49 @@ The defined DNS records are deployed to the DNS Provider using the GitHub action
 The GitHub Action is defined in the [`.github/workflows/dnscontrol.yml`](.github/workflows/dnscontrol.yml) file.
 
 ```yaml
-name: Check
+name: DNSControl
 
-on: pull_request
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
+  PORKBUN_API_SECRET: ${{ secrets.PORKBUN_API_SECRET }}
 
 jobs:
-  check:
+  dnscontrol:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: DNSControl check
+      - name: Check
         uses: koenrh/dnscontrol-action@v3
         with:
           args: check
+          config_file: 'dnscontrol.js'
+          creds_file: 'creds.example.json'
 
-          # Optionally, if your DNSConfig files are in a non-default location,
-          # you could specify the paths to the config and credentials file.
-          config_file: 'dns/dnsconfig.js'
+      - name: Push
+        uses: koenrh/dnscontrol-action@v3
+        with:
+          args: push
+          config_file: 'dnscontrol.js'
+          creds_file: 'creds.example.json'
+```
 
 ## Configuration
 
 The configuration for `dnscontrol` is stored in the following files:
 
-- `creds.json`
+- `creds.json` (not included in the repository)
 - `dnsconfig.js`
 
 plus an additional, but optional, TypeScript definition file:
@@ -113,8 +143,8 @@ See the [creds.example.json](creds.example.json) file for an example of the form
 {
     "porkbun": {
         "TYPE": "PORKBUN",
-        "api_key": "<porkbun-api-key>",
-        "secret_key": "<porkbun-secret-key>"
+        "api_key": "$PORKBUN_API_KEY",
+        "secret_key": "$PORKBUN_API_SECRET"
     }
 }
 ```

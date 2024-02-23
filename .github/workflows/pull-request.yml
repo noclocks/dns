@@ -4,6 +4,11 @@ on:
   pull_request:
   workflow_dispatch:
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
+  PORKBUN_API_SECRET: ${{ secrets.PORKBUN_API_SECRET }}
+
 jobs:
   dnscontrol:
     runs-on: ubuntu-latest
@@ -20,7 +25,7 @@ jobs:
         with:
           args: check
           config_file: 'dnscontrol.js'
-          creds_file: 'creds.json'
+          creds_file: 'creds.example.json'
 
       - name: Preview
         id: dnscontrol_preview
@@ -28,7 +33,7 @@ jobs:
         with:
           args: preview
           config_file: 'dnscontrol.js'
-          creds_file: 'creds.json'
+          creds_file: 'creds.example.json'
 
       - name: Comment
         uses: mshick/add-pr-comment@v1

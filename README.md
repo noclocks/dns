@@ -3,6 +3,9 @@
 > [!NOTE]
 > This repository manages the DNS Records for No Clocks.
 
+[![DNSControl](https://github.com/noclocks/dns/actions/workflows/dnscontrol.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/dnscontrol.yml)
+[![Automate Changelog](https://github.com/noclocks/dns/actions/workflows/changelog.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/changelog.yml)
+
 
 ## Contents
 

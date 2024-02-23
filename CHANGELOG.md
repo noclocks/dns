@@ -13,6 +13,7 @@
 
 ### Features
 
+- Add HubSpot blog DNS CNAME record
 - Add changelog and pr mgmt
 
 ***

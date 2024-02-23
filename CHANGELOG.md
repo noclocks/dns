@@ -6,6 +6,10 @@
 
 ## [Unreleased]
 
+### Documentation
+
+- Fix README
+
 ### Features
 
 - Add changelog and pr mgmt

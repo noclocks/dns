@@ -163,15 +163,15 @@ This file contains the DNS records for the No Clocks, LLC domain.
 // <reference path="types-dnscontrol.d.ts" />
 
 var REG_NONE = NewRegistrar("none");
-var REG_PORKBUN = NewRegistrar("porkbun");
 var DSP_PORKBUN = NewDnsProvider("porkbun");
 
-D("noclocks.dev", REG_PORKBUN, DnsProvider(DSP_PORKBUN),
+D("noclocks.dev", REG_NONE, DnsProvider(DSP_PORKBUN),
     ALIAS("@", "pixie.porkbun.com."),
     CNAME("*", "pixie.porkbun.com."),
     CNAME("www", "noclocks.dev."),
     CNAME("docs", "noclocks.github.io."),
-    TXT("_github-pages-challenge-noclocks", "8c88c3f5791a75585aedc0a0e821fb")
+    TXT("_github-pages-challenge-noclocks", "8c88c3f5791a75585aedc0a0e821fb"),
+    CNAME("blog", "39843493.group43.sites.hubspot.net.")
 );
 ```
 
@@ -179,13 +179,14 @@ D("noclocks.dev", REG_PORKBUN, DnsProvider(DSP_PORKBUN),
 
 *As of 2024-02-23:*
 
-| Type  |                Host                |              Value               | TTL | Options |               Notes                |
-|:-----:|:----------------------------------:|:--------------------------------:|:---:|:-------:|:----------------------------------:|
-| ALIAS |                `@`                 |       `pixie.porkbun.com.`       | 60  |         |                                    |
-| CNAME |                `*`                 |       `pixie.porkbun.com.`       | 600 |         |                                    |
-| CNAME |               `www`                |         `noclocks.dev.`          | 600 |         | `CNAME` record for "www" subdomain |
-| CNAME |               `docs`               |      `noclocks.github.io.`       | 600 |         |  `CNAME` record for GitHub Pages   |
-|  TXT  | `_github-pages-challenge-noclocks` | `8c88c3f5791a75585aedc0a0e821fb` | 600 |         |     GitHub Domain Verification     |
+| Type  |                Host                |              Value                   | TTL |               Notes                   |
+|:-----:|:----------------------------------:|:------------------------------------:|:---:|:-------------------------------------:|
+| ALIAS |                `@`                 |       `pixie.porkbun.com.`           | 60  |                                       |
+| CNAME |                `*`                 |       `pixie.porkbun.com.`           | 600 |                                       |
+| CNAME |               `www`                |         `noclocks.dev.`              | 600 | `CNAME` record for "www" subdomain    |
+| CNAME |               `docs`               |      `noclocks.github.io.`           | 600 |  `CNAME` record for GitHub Pages      |
+|  TXT  | `_github-pages-challenge-noclocks` | `8c88c3f5791a75585aedc0a0e821fb`     | 600 |     GitHub Domain Verification        |
+| CNAME |               `blog`               | `39843493.group43.sites.hubspot.net` | 600 |     `CNAME` record for blog subdomain |
 
 ***
 

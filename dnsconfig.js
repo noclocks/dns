@@ -10,5 +10,6 @@ D("noclocks.dev", REG_PORKBUN, DnsProvider(DSP_PORKBUN),
     CNAME("*", "pixie.porkbun.com."),
     CNAME("www", "noclocks.dev."),
     CNAME("docs", "noclocks.github.io."),
-    TXT("_github-pages-challenge-noclocks", "8c88c3f5791a75585aedc0a0e821fb")
+    TXT("_github-pages-challenge-noclocks", "8c88c3f5791a75585aedc0a0e821fb"),
+    CNAME("blog", "39843493.group43.sites.hubspot.net")
 );

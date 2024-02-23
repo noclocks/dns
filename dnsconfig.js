@@ -2,10 +2,10 @@
 // <reference path="types-dnscontrol.d.ts" />
 
 var REG_NONE = NewRegistrar("none");
-var REG_PORKBUN = NewRegistrar("porkbun");
+// var REG_PORKBUN = NewRegistrar("porkbun");
 var DSP_PORKBUN = NewDnsProvider("porkbun");
 
-D("noclocks.dev", REG_PORKBUN, DnsProvider(DSP_PORKBUN),
+D("noclocks.dev", REG_NONE, DnsProvider(DSP_PORKBUN),
     ALIAS("@", "pixie.porkbun.com."),
     CNAME("*", "pixie.porkbun.com."),
     CNAME("www", "noclocks.dev."),

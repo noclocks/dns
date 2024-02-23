@@ -25,12 +25,12 @@ jobs:
         uses: koenrh/dnscontrol-action@v3
         with:
           args: check
-          config_file: 'dnscontrol.js'
+          config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
 
       - name: Push
         uses: koenrh/dnscontrol-action@v3
         with:
           args: push
-          config_file: 'dnscontrol.js'
+          config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'

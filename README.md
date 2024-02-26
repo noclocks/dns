@@ -1,7 +1,14 @@
 # No Clocks, LLC Domain Name System Records
 
+<!-- BADGES:START -->
 [![DNSControl](https://github.com/noclocks/dns/actions/workflows/dnscontrol.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/dnscontrol.yml)
+[![Preview DNS Changes](https://github.com/noclocks/dns/actions/workflows/pull-request.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/pull-request.yml)
+[![Rollback DNS Configuration](https://github.com/noclocks/dns/actions/workflows/rollback.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/rollback.yml)
+
 [![Automate Changelog](https://github.com/noclocks/dns/actions/workflows/changelog.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/changelog.yml)
+[![Deploy GitHub Pages](https://github.com/noclocks/dns/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/jekyll-gh-pages.yml)
+[![pages-build-deployment](https://github.com/noclocks/dns/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/noclocks/dns/actions/workflows/pages/pages-build-deployment)
+<!-- BADGES:END -->
 
 > [!NOTE]
 > This repository manages the DNS Records for No Clocks.

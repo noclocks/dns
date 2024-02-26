@@ -6,8 +6,18 @@
 
 ## [Unreleased]
 
+### Bug Fixes
+
+- Fix records for mailchimp
+
+### Configuration
+
+- Refactor path to types definition
+- Migrate types to config folder
+
 ### Documentation
 
+- Add useful commands to README
 - Update README table
 - Update README
 - Update DNS table in README
@@ -15,6 +25,10 @@
 
 ### Features
 
+- Add `fmt` example output
+- Add various example usage demos
+- Add zone file export
+- Add BIND type to creds
 - Add slack webhook to creds
 - Add TTLs
 - Update DNS records with new email hosting records
@@ -23,6 +37,7 @@
 
 ### Refactoring
 
+- Alter dnsconfig
 - Cleanup
 - Refactor dnsconfig
 

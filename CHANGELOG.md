@@ -8,6 +8,7 @@
 
 ### Documentation
 
+- Update README
 - Update DNS table in README
 - Fix README
 
@@ -21,6 +22,7 @@
 
 ### Refactoring
 
+- Cleanup
 - Refactor dnsconfig
 
 ***

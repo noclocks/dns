@@ -16,13 +16,9 @@ env:
 jobs:
   dnscontrol:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Check
         id: dnscontrol_check
         uses: is-cool-me/dnscontrol-action@v4.7.3
@@ -30,7 +26,6 @@ jobs:
           args: check
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
-
       - name: Push
         id: dnscontrol_push
         uses: is-cool-me/dnscontrol-action@v4.7.3
@@ -38,7 +33,6 @@ jobs:
           args: push --notify --report "./reports/$(date '+%Y-%m-%d')-Report.txt"
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
-
       - name: Commit and Push Changes
         id: git_commit_push
         uses: actions-js/push@master

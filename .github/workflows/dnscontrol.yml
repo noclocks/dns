@@ -11,7 +11,7 @@ env:
   PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
   PORKBUN_API_SECRET: ${{ secrets.PORKBUN_API_SECRET }}
   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-  REPORT_PATH: "${{ github.workspace }}/reports/$(date '+%Y-%m-%d')-Report.txt"
+  REPORT_PATH: "./reports/${date}-Report.txt"
 
 jobs:
   dnscontrol:
@@ -30,7 +30,7 @@ jobs:
         id: dnscontrol_push
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
-          args: push --notify --report "./reports/$(date '+%Y-%m-%d')-Report.txt"
+          args: push --notify --report ${{ env.REPORT_PATH }}
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
       - name: Commit and Push Changes

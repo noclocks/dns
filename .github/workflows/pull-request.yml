@@ -36,7 +36,7 @@ jobs:
           creds_file: 'creds.example.json'
 
       - name: Comment
-        uses: mshick/add-pr-comment@v1
+        uses: mshick/add-pr-comment@v2
         with:
           message: |
             ```

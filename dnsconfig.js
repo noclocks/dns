@@ -1,5 +1,5 @@
 // @ts-check
-// <reference path="types-dnscontrol.d.ts" />
+// <reference path="config/types-dnscontrol.d.ts" />
 
 var DSP_PORKBUN = NewDnsProvider("porkbun");
 var REG_NONE = NewRegistrar("none");

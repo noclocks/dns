@@ -5,6 +5,9 @@ on:
     branches: 
       - main
       - develop
+  push:
+    branches:
+      - develop
   workflow_dispatch:
 
 env:
@@ -51,9 +54,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          message: |
+          msg: |
             ```
             ${{ steps.dnscontrol_preview.outputs.preview_comment }}
             ```
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          check_for_duplicate_msg: false
+          check_for_duplicate_msg: true

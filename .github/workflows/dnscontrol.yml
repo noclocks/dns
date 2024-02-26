@@ -10,6 +10,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
   PORKBUN_API_SECRET: ${{ secrets.PORKBUN_API_SECRET }}
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
 jobs:
   dnscontrol:

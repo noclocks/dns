@@ -32,6 +32,6 @@ jobs:
       - name: Push
         uses: koenrh/dnscontrol-action@v3
         with:
-          args: push
+          args: push --notify
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'

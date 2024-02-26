@@ -17,6 +17,7 @@
 
 ### Documentation
 
+- Add commands to examples
 - Refactor README
 - Add badges to README
 - Add useful commands to README

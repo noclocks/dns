@@ -8,6 +8,7 @@
 
 ### Documentation
 
+- Update README table
 - Update README
 - Update DNS table in README
 - Fix README

@@ -1,5 +1,11 @@
 # No Clocks, LLC Domain Name System Records
 
+> [!NOTE]
+> This repository manages the DNS Records for No Clocks.
+
+## Badges
+
+
 <!-- BADGES:START -->
 [![DNSControl](https://github.com/noclocks/dns/actions/workflows/dnscontrol.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/dnscontrol.yml)
 [![Preview DNS Changes](https://github.com/noclocks/dns/actions/workflows/pull-request.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/pull-request.yml)
@@ -10,12 +16,10 @@
 [![pages-build-deployment](https://github.com/noclocks/dns/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/noclocks/dns/actions/workflows/pages/pages-build-deployment)
 <!-- BADGES:END -->
 
-> [!NOTE]
-> This repository manages the DNS Records for No Clocks.
-
 ## Contents
 
 - [No Clocks, LLC Domain Name System Records](#no-clocks-llc-domain-name-system-records)
+  - [Badges](#badges)
   - [Contents](#contents)
   - [Overview](#overview)
   - [DNSControl](#dnscontrol)

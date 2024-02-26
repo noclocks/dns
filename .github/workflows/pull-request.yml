@@ -5,9 +5,6 @@ on:
     branches: 
       - main
       - develop
-  push:
-    branches:
-      - develop
   workflow_dispatch:
 
 env:
@@ -26,10 +23,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check
+        id: dnscontrol_check
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
           args: check
-          config_file: 'dnscontrol.js'
+          config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
 
   dnscontrol-preview:
@@ -45,8 +43,8 @@ jobs:
         id: dnscontrol_preview
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
-          args: preview
-          config_file: 'dnscontrol.js'
+          args: preview --notify
+          config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
 
       - name: Comment

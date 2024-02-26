@@ -26,11 +26,14 @@ jobs:
           args: check
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
+      - name: Get Date
+        id: get_date
+        run: echo "::set-output name=report_date::$(date +'%Y-%m-%d')"
       - name: Push
         id: dnscontrol_push
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
-          args: push --notify --report ${{ env.REPORT_PATH }}
+          args: push --notify --report "./reports/${{ steps.get_date.outputs.report_date }}-Report.txt"
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
       - name: Commit and Push Changes

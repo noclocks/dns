@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'dnsconfig.js'
+      - '.github/workflows/dnscontrol.yml'
+      - 'creds.example.json'
   workflow_dispatch:
 
 env:
@@ -11,31 +15,61 @@ env:
   PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
   PORKBUN_API_SECRET: ${{ secrets.PORKBUN_API_SECRET }}
   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-  REPORT_PATH: "./reports/${date}-Report.txt"
+  CONFIG_FILE: 'dnsconfig.js'
+  CREDS_FILE: 'creds.example.json'
 
 jobs:
-  dnscontrol:
+  dnscontrol-check:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Check
         id: dnscontrol_check
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
           args: check
-          config_file: 'dnsconfig.js'
-          creds_file: 'creds.example.json'
+          config_file: CONFIG_FILE
+          creds_file: CREDS_FILE
+  
+  dnscontrol-preview:
+    runs-on: ubuntu-latest
+    needs: dnscontrol-check
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preview
+        id: dnscontrol_preview
+        uses: is-cool-me/dnscontrol-action@v4.7.3
+        with:
+          args: preview --notify
+          config_file: CONFIG_FILE
+          creds_file: CREDS_FILE
+
+  dnscontrol-push:
+    runs-on: ubuntu-latest
+    needs: dnscontrol-preview
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Get Date
         id: get_date
         run: echo "::set-output name=report_date::$(date +'%Y-%m-%d')"
+      
       - name: Push
         id: dnscontrol_push
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
           args: push --notify --report "./reports/${{ steps.get_date.outputs.report_date }}-Report.txt"
-          config_file: 'dnsconfig.js'
-          creds_file: 'creds.example.json'
+          config_file: CONFIG_FILE
+          creds_file: CREDS_FILE
+          
       - name: Commit and Push Changes
         id: git_commit_push
         uses: actions-js/push@master
@@ -43,4 +77,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           author_email: 'github-actions[bot]@users.noreply.github.com'
           author_name: 'github-actions[bot]'
-          message: 'chore: github action dnscontrol - ${date}'
+          message: 'chore: github action dnscontrol - ${{ steps.get_date.outputs.report_date }}'

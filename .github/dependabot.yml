@@ -5,3 +5,12 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    assignees:
+      - "jimbrig"
+
+  - package-exosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    assignees:
+      - "jimbrig"

@@ -80,5 +80,4 @@ jobs:
         with:
           commit_user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_user_name: 'github-actions[bot]'
-          commit_author: '<Jimmy Briggs <jimmy.briggs@jimbrig.com>'
           commit_message: 'chore: github action dnscontrol - $REPORT_DATE'

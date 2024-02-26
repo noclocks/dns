@@ -34,8 +34,8 @@ jobs:
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
           args: push --notify --report "./reports/${{ steps.get_date.outputs.report_date }}-ROLLBACK-Report.txt"
-          config_file: CONFIG_FILE
-          creds_file: CREDS_FILE
+          config_file: 'dnsconfig.js'
+          creds_file: 'creds.example.json'
           
       - name: Commit and Push Changes
         id: git_commit_push

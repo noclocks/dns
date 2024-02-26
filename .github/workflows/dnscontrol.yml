@@ -33,6 +33,6 @@ jobs:
       - name: Push
         uses: koenrh/dnscontrol-action@v3
         with:
-          args: push --notify --report ${{ env.REPORT_PATH }}
+          args: push --notify --report "./reports/$(date '+%Y-%m-%d')-Report.txt"
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'

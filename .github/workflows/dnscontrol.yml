@@ -88,6 +88,10 @@ jobs:
           args: push --notify --report $REPORT_FILE
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
+
+      - name: Git Pull
+        id: git_pull
+        run: git pull
           
       - name: Commit and Push Changes
         id: git_commit_push

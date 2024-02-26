@@ -2,3 +2,71 @@
 
 > [!NOTE]
 > Examples of how to use `dnscontrol`
+
+## Useful Commands
+
+```bash
+# check configuration validity:
+dnscontrol check
+
+# apply formatting to configuration
+dnscontrol fmt dnsconfig.js
+
+# preview what changes would be made
+dnscontrol preview
+
+# full preview
+dnscontrol preview --full
+
+# preview with a notification hook (slack)
+dnscontrol preview --notify
+
+# check credentials against Porkbun API:
+dnscontrol check-creds porkbun
+
+# push DNS record changes
+dnscontrol push
+
+# push and notify (slack)
+dnscontrol push --notify
+
+# push and output a text report
+mkdir reports
+dnscontrol push --report "./reports/$(date '+%Y-%m-%d')-Report.txt"
+
+# import / retrieve current records via a 'zone' file
+dnscontrol get-zones --format=zone porkbun - noclocks.dev
+
+# import / retrieve current records via a 'zone' file with output
+mkdir zones
+dnscontrol get-zones --format=zone porkbun - noclocks.dev > zones/noclocks.dev.zone
+
+# get zones (names only)
+dnscontrol get-zones --format=nameonly porkbun - noclocks.dev
+
+# get zones (zone file format using the BIND provider)
+dnscontrol get-zones --format=zone bind - noclocks.dev
+
+# get zones (table format)
+dnscontrol get-zones --format=tsv porkbun - noclocks.dev
+
+# get zones (table format and output to CSV/TSV data file)
+dnscontrol get-zones --format=tsv porkbun - noclocks.dev > reports/noclocks.dev.csv
+
+# get zones formatted with `djs` (JavaScript with leading commas)
+dnscontrol get-zones --format=djs porkbun - noclocks.dev
+
+# get zones formatted with `djs` (JavaScript with leading commas) & output to file
+dnscontrol get-zones --format=djs porkbun - noclocks.dev > noclocks.dev.js
+
+# get zones formatted as JavaScript
+dnscontrol get-zones --format=js porkbun - noclocks.dev
+
+# get zones formatted as JavaScript and output to file
+dnscontrol get-zones --format=js porkbun - noclocks.dev > noclocks.dev.js
+
+# utilize dnsutils 'dig' to check DNS record propogation, etc.
+sudo apt install dnsutils
+dig noclocks.dev
+dig +short noclocks.dev
+```

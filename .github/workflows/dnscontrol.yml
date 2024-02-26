@@ -31,8 +31,8 @@ jobs:
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
           args: check
-          config_file: CONFIG_FILE
-          creds_file: CREDS_FILE
+          config_file: 'dnsconfig.js'
+          creds_file: 'creds.example.json'
   
   dnscontrol-preview:
     runs-on: ubuntu-latest
@@ -47,8 +47,8 @@ jobs:
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
           args: preview --notify
-          config_file: CONFIG_FILE
-          creds_file: CREDS_FILE
+          config_file: 'dnsconfig.js'
+          creds_file: 'creds.example.json'
 
   dnscontrol-push:
     runs-on: ubuntu-latest
@@ -67,8 +67,8 @@ jobs:
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
           args: push --notify --report "./reports/${{ steps.get_date.outputs.report_date }}-Report.txt"
-          config_file: CONFIG_FILE
-          creds_file: CREDS_FILE
+          config_file: 'dnsconfig.js'
+          creds_file: 'creds.example.json'
           
       - name: Commit and Push Changes
         id: git_commit_push

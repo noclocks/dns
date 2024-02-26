@@ -5,6 +5,9 @@ on:
     branches: 
       - main
       - develop
+  push:
+    branches:
+      - develop
   workflow_dispatch:
 
 env:

@@ -17,6 +17,7 @@
 
 ### Documentation
 
+- Add badges to README
 - Add useful commands to README
 - Update README table
 - Update README

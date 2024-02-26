@@ -53,6 +53,8 @@ jobs:
   dnscontrol-push:
     runs-on: ubuntu-latest
     needs: dnscontrol-preview
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
@@ -60,21 +62,23 @@ jobs:
 
       - name: Get Date
         id: get_date
-        run: echo "::set-output name=report_date::$(date +'%Y-%m-%d')"
+        run: echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
       
       - name: Push
         id: dnscontrol_push
         uses: is-cool-me/dnscontrol-action@v4.7.3
+        env:
+          REPORT_DATE: ${{ steps.get_date.outputs.REPORT_DATE }}
         with:
-          args: push --notify --report "./reports/${{ steps.get_date.outputs.report_date }}-Report.txt"
+          args: push --notify --report "./reports/$REPORT_DATE-Report.txt"
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
           
       - name: Commit and Push Changes
         id: git_commit_push
-        uses: actions-js/push@master
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          author_email: 'github-actions[bot]@users.noreply.github.com'
-          author_name: 'github-actions[bot]'
-          message: 'chore: github action dnscontrol - ${{ steps.get_date.outputs.report_date }}'
+          commit_user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_user_name: 'github-actions[bot]'
+          commit_author: '<Jimmy Briggs <jimmy.briggs@jimbrig.com>'
+          commit_message: 'chore: github action dnscontrol - $REPORT_DATE'

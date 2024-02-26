@@ -11,6 +11,7 @@ env:
   PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
   PORKBUN_API_SECRET: ${{ secrets.PORKBUN_API_SECRET }}
   SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+  REPORT_PATH: "${{ github.workspace }}/reports/$(date '+%Y-%m-%d')-Report.txt"
 
 jobs:
   dnscontrol:
@@ -32,6 +33,6 @@ jobs:
       - name: Push
         uses: koenrh/dnscontrol-action@v3
         with:
-          args: push
+          args: push --notify --report ${{ env.REPORT_PATH }}
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'

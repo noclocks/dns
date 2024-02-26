@@ -13,6 +13,7 @@
 
 ### Features
 
+- Add TTLs
 - Update DNS records with new email hosting records
 - Add HubSpot blog DNS CNAME record
 - Add changelog and pr mgmt

@@ -62,15 +62,24 @@ jobs:
 
       - name: Get Date
         id: get_date
-        run: echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        run: echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Test Echo Date
+        env:
+          REPORT_DATE: ${{ env.REPORT_DATE }}
+          REPORT_FILE: "./reports/$(${{ env.REPORT_DATE }})-Report.txt"
+        run: |
+          echo "$REPORT_DATE"
+          echo "$REPORT_FILE"          
       
       - name: Push
         id: dnscontrol_push
         uses: is-cool-me/dnscontrol-action@v4.7.3
         env:
-          REPORT_DATE: ${{ steps.get_date.outputs.REPORT_DATE }}
+          REPORT_DATE: ${{ env.REPORT_DATE }}
+          REPORT_FILE: "./reports/$(${{ env.REPORT_DATE }})-Report.txt"
         with:
-          args: push --notify --report "./reports/$REPORT_DATE-Report.txt"
+          args: push --notify --report ${{ env.REPORT_FILE }}
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
           

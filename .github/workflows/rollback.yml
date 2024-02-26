@@ -1,0 +1,47 @@
+name: Rollback DNS Configuration
+
+on:
+  workflow_dispatch:
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
+  PORKBUN_API_SECRET: ${{ secrets.PORKBUN_API_SECRET }}
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+  CONFIG_FILE: 'dnsconfig.js'
+  CREDS_FILE: 'creds.example.json'
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Revert last commit
+        run: |
+          git revert HEAD~1 --no-commit
+          git commit -m "Revert last DNS change"
+          git push
+
+      - name: Get Date
+        id: get_date
+        run: echo "::set-output name=report_date::$(date +'%Y-%m-%d')"
+      
+      - name: Push
+        id: dnscontrol_push
+        uses: is-cool-me/dnscontrol-action@v4.7.3
+        with:
+          args: push --notify --report "./reports/${{ steps.get_date.outputs.report_date }}-ROLLBACK-Report.txt"
+          config_file: CONFIG_FILE
+          creds_file: CREDS_FILE
+          
+      - name: Commit and Push Changes
+        id: git_commit_push
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          author_email: 'github-actions[bot]@users.noreply.github.com'
+          author_name: 'github-actions[bot]'
+          message: 'chore: github action dnscontrol - ${{ steps.get_date.outputs.report_date }}'

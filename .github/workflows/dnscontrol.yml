@@ -32,8 +32,18 @@ jobs:
           creds_file: 'creds.example.json'
 
       - name: Push
+        id: dnscontrol_push
         uses: is-cool-me/dnscontrol-action@v4.7.3
         with:
           args: push --notify --report "./reports/$(date '+%Y-%m-%d')-Report.txt"
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
+
+      - name: Commit and Push Changes
+        id: git_commit_push
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          author_email: 'github-actions[bot]@users.noreply.github.com'
+          author_name: 'github-actions[bot]'
+          message: 'chore: github action dnscontrol - ${date}'

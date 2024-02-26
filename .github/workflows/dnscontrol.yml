@@ -81,11 +81,8 @@ jobs:
       - name: Push
         id: dnscontrol_push
         uses: is-cool-me/dnscontrol-action@v4.7.3
-        env:
-          REPORT_DATE: ${{ env.REPORT_DATE }}
-          REPORT_FILE: ${{ env.REPORT_FILE }}
         with:
-          args: push --notify --report $REPORT_FILE
+          args: push --notify --report ${{ env.REPORT_FILE }}
           config_file: 'dnsconfig.js'
           creds_file: 'creds.example.json'
 

@@ -1,4 +1,4 @@
-FROM ghcr.io/stackexchange/dnscontrol
+FROM ghcr.io/stackexchange/dnscontrol:4.8.2
 
 COPY . /dns
 

@@ -1,8 +1,6 @@
 // @ts-check
 // <reference path="types-dnscontrol.d.ts" />
 
-// var REG_PORKBUN = NewRegistrar("porkbun");
-// var DNS_BIND = NewDnsProvider("bind");
 var REG_NONE = NewRegistrar("none");
 var DSP_PORKBUN = NewDnsProvider("porkbun");
 

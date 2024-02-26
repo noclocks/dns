@@ -3,5 +3,9 @@
         "TYPE": "PORKBUN",
         "api_key": "$PORKBUN_API_KEY",
         "secret_key": "$PORKBUN_API_SECRET"
+    },
+    "notifications": {
+      "TYPE": "SLACK",
+      "slack_url": "$SLACK_WEBHOOK_URL"
     }
 }

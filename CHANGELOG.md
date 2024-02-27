@@ -28,6 +28,7 @@
 
 ### Features
 
+- Add new CNAME records
 - Add `fmt` example output
 - Add various example usage demos
 - Add zone file export

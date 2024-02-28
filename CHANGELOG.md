@@ -28,6 +28,7 @@
 
 ### Features
 
+- Add TXT record for github domain verification
 - Add new CNAME records
 - Add `fmt` example output
 - Add various example usage demos
@@ -41,6 +42,7 @@
 
 ### Refactoring
 
+- Refactor main dnsconfig
 - Alter dnsconfig
 - Cleanup
 - Refactor dnsconfig

@@ -21,4 +21,5 @@ D("noclocks.dev", REG_NONE
 	, TXT("_acme-challenge", "YfcZoPb1JoXtiwUP0k4aimMlw712-NxzrrIsxMAJJtY")
 	, TXT("_acme-challenge", "duFW0ARxb60Rd6snfskR9b4db08jaoGVrM_dGY-PUcA")
 	, TXT("_github-pages-challenge-noclocks", "8c88c3f5791a75585aedc0a0e821fb")
+	, TXT("_github-challenge-noclocks-org", "5b7bfb8c3a")
 );

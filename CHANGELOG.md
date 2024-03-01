@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 
+- Fix typo in dependabot.yml
 - Fix records for mailchimp
 
 ### Configuration

@@ -29,6 +29,7 @@
 
 ### Features
 
+- Add google domain verification TXT
 - Add TXT record for github domain verification
 - Add new CNAME records
 - Add `fmt` example output

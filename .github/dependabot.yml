@@ -8,7 +8,7 @@ updates:
     assignees:
       - "jimbrig"
 
-  - package-exosystem: "docker"
+  - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "weekly"

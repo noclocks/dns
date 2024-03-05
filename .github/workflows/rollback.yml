@@ -31,7 +31,7 @@ jobs:
       
       - name: Push
         id: dnscontrol_push
-        uses: is-cool-me/dnscontrol-action@v4.7.3
+        uses: is-cool-me/dnscontrol-action@v4.8.2
         with:
           args: push --notify --report "./reports/${{ steps.get_date.outputs.report_date }}-ROLLBACK-Report.txt"
           config_file: 'dnsconfig.js'

@@ -13,6 +13,7 @@
 
 ### Configuration
 
+- Fix LF
 - Refactor path to types definition
 - Migrate types to config folder
 
@@ -29,6 +30,7 @@
 
 ### Features
 
+- Add shopify CNAME record
 - Add google domain verification TXT
 - Add TXT record for github domain verification
 - Add new CNAME records

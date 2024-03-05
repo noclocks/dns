@@ -3,6 +3,9 @@
 # Auto detect text files and perform LF normalization
 *          text=auto
 
+# LF normalization
+*          eol=lf
+
 #
 # The above will handle all files NOT found below
 #

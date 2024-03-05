@@ -13,6 +13,7 @@ D("noclocks.dev", REG_NONE
 	, CNAME("k2._domainkey", "dkim2.mcsv.net.")
 	, CNAME("k3._domainkey", "dkim3.mcsv.net.")
 	, CNAME("blog", "hashnode.network.")
+    , CNAME("store", "shops.myshopify.com.")
 	, MX("@", 1, "fwd1.porkbun.com.")
 	, MX("@", 1, "fwd2.porkbun.com.")
 	, TXT("@", "v=spf1 include:_spf.porkbun.com ~all")

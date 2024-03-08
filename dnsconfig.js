@@ -24,4 +24,5 @@ D("noclocks.dev", REG_NONE
 	, TXT("_github-pages-challenge-noclocks", "8c88c3f5791a75585aedc0a0e821fb")
 	, TXT("_github-challenge-noclocks-org", "5b7bfb8c3a")
 	, TXT("@", "google-site-verification=8esyvYnZaJ9-JUcC81RlatPuElBjXcGziiqYiq8FJw8")
+	, TXT("@", "amazon-business-verification=1229ee0236ee3c28b825288e96e890beaad42a4a461d7a0eb65537601da42912")
 );

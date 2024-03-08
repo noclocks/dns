@@ -30,6 +30,7 @@
 
 ### Features
 
+- Add amazon verification TXT record
 - Add shopify CNAME record
 - Add google domain verification TXT
 - Add TXT record for github domain verification

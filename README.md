@@ -282,21 +282,37 @@ D("noclocks.dev", REG_NONE, DnsProvider(DSP_PORKBUN),
 
 *As of 2024-02-23:*
 
-|  Type   |                Host                |                     Value                     | TTL |                 Notes                 |
-|:-------:|:----------------------------------:|:---------------------------------------------:|:---:|:-------------------------------------:|
-| `ALIAS` |                `@`                 |             `pixie.porkbun.com.`              | 60  |    `ALIAS` record for root domain     |
-| `CNAME` |                `*`                 |             `pixie.porkbun.com.`              | 600 | `CNAME` record for wildcard subdomain |
-| `CNAME` |               `www`                |                `noclocks.dev.`                | 600 |  `CNAME` record for "www" subdomain   |
-| `CNAME` |               `docs`               |             `noclocks.github.io.`             | 600 |    `CNAME` record for GitHub Pages    |
-| `CNAME` |               `blog`               |     `39843493.group43.sites.hubspot.net`      | 600 |   `CNAME` record for blog subdomain   |
-|  `MX`   |                `@`                 |              `fwd1.porkbun.com.`              | 600 |   `MX` record for email forwarding    |
-|  `MX`   |                `@`                 |              `fwd2.porkbun.com.`              | 600 |   `MX` record for email forwarding    |
-|  `TXT`  |                `@`                 |    `v=spf1 include:_spf.porkbun.com ~all`     | 300 |   `SPF` record for email forwarding   |
-|  `TXT`  |        `default._domainkey`        |             `v=DKIM1; k=rsa; ...`             | 300 |  `DKIM` record for email forwarding   |
-|  `TXT`  |              `_dmarc`              |         `v=DMARC1; p=quarantine; ...`         | 300 |  `DMARC` record for email forwarding  |
-|  `TXT`  |         `_acme-challenge`          | `YfcZoPb1JoXtiwUP0k4aimMlw712-NxzrrIsxMAJJtY` | 600 |   Let's Encrypt Domain Verification   |
-|  `TXT`  |         `_acme-challenge`          | `duFW0ARxb60Rd6snfskR9b4db08jaoGVrM_dGY-PUcA` | 600 |   Let's Encrypt Domain Verification   |
-|  `TXT`  | `_github-pages-challenge-noclocks` |       `8c88c3f5791a75585aedc0a0e821fb`        | 600 |      GitHub Domain Verification       |
+|  Type   |                Host                |                     Value                     | TTL |                     Notes                     |
+|:-------:|:----------------------------------:|:---------------------------------------------:|:---:|:---------------------------------------------:|
+| `ALIAS` |                `@`                 |             `pixie.porkbun.com.`              | 60  |        `ALIAS` record for root domain         |
+| `CNAME` |                `*`                 |             `pixie.porkbun.com.`              | 600 |     `CNAME` record for wildcard subdomain     |
+| `CNAME` |               `www`                |                `noclocks.dev.`                | 600 |      `CNAME` record for "www" subdomain       |
+| `CNAME` |               `hub`                |     `39843493.group43.sites.hubspot.net`      | 600 |     `CNAME` record for HubSpot subdomain      |
+| `CNAME` |               `docs`               |             `noclocks.github.io.`             | 600 |        `CNAME` record for GitHub Pages        |
+| `CNAME` |               `blog`               |              `hashnode.network.`              | 600 | `CNAME` record for blog subdomain on Hashnode |
+| `CNAME` |              `store`               |            `shops.myshopify.com.`             | 600 |  `CNAME` record for Shopify store subdomain   |
+| `CNAME` |          `k2._domainkey`           |               `dkim2.mcsv.net.`               | 600 |   `CNAME` record for Mailchimp DKIM record    |
+| `CNAME` |          `k3._domainkey`           |               `dkim3.mcsv.net.`               | 600 |   `CNAME` record for Mailchimp DKIM record    |
+|  `MX`   |                `@`                 |              `fwd1.porkbun.com.`              | 600 |       `MX` record for email forwarding        |
+|  `MX`   |                `@`                 |              `fwd2.porkbun.com.`              | 600 |       `MX` record for email forwarding        |
+|  `TXT`  |                `@`                 |    `v=spf1 include:_spf.porkbun.com ~all`     | 300 |       `SPF` record for email forwarding       |
+|  `TXT`  |        `default._domainkey`        |             `v=DKIM1; k=rsa; ...`             | 300 |      `DKIM` record for email forwarding       |
+|  `TXT`  |              `_dmarc`              |         `v=DMARC1; p=quarantine; ...`         | 300 |      `DMARC` record for email forwarding      |
+|  `TXT`  |         `_acme-challenge`          | `YfcZoPb1JoXtiwUP0k4aimMlw712-NxzrrIsxMAJJtY` | 600 |       Let's Encrypt Domain Verification       |
+|  `TXT`  |         `_acme-challenge`          | `duFW0ARxb60Rd6snfskR9b4db08jaoGVrM_dGY-PUcA` | 600 |       Let's Encrypt Domain Verification       |
+|  `TXT`  | `_github-pages-challenge-noclocks` |       `8c88c3f5791a75585aedc0a0e821fb`        | 600 |          GitHub Domain Verification           |
+|  `TXT`  |  `_github-challenge-noclocks-org`  |                 `5b7bfb8c3a`                  | 600 |          GitHub Domain Verification           |
+|  `TXT`  |                `@`                 |        `google-site-verification=...`         | 600 |          Google Domain Verification           |
+|  `TXT`  |                `@`                 |      `amazon-business-verification=...`       | 600 |          Amazon Domain Verification           |
+
+## Name Servers
+
+```bash
+curitiba.ns.porkbun.com
+fortaleza.ns.porkbun.com
+maceio.ns.porkbun.com
+salvador.ns.porkbun.com
+```
 
 ## Useful Commands
 

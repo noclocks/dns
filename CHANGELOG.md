@@ -30,6 +30,7 @@
 
 ### Features
 
+- Add vercel TXT verification
 - Add custom stripe "pay" subdomain
 - Add amazon verification TXT record
 - Add shopify CNAME record

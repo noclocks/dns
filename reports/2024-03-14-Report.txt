@@ -1,7 +1,7 @@
 [
   {
     "domain": "noclocks.dev",
-    "corrections": 5,
+    "corrections": 1,
     "provider": "porkbun"
   },
   {

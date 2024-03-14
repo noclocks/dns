@@ -28,4 +28,5 @@ D("noclocks.dev", REG_NONE
   , TXT("@", "google-site-verification=8esyvYnZaJ9-JUcC81RlatPuElBjXcGziiqYiq8FJw8")
   , TXT("@", "amazon-business-verification=1229ee0236ee3c28b825288e96e890beaad42a4a461d7a0eb65537601da42912")
   , TXT("_acme-challenge.pay", "d9uRKsP6foqYEgijjeBA1MB50wa4KW4NNe1BQE5-EP4")
+  , TXT("_vercel", "vc-domain-verify=noclocks.dev,a2b5da3a50a19754c1e0")
 );

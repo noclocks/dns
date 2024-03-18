@@ -8,6 +8,8 @@ D("noclocks.dev", REG_NONE
   , DnsProvider(DSP_PORKBUN)
   , DefaultTTL(600)
   , ALIAS("@", "lixie.porkbun.com.")
+  , A("medium", "162.159.153.4")
+  , A("medium", "162.159.152.4")
   , CNAME("*", "lixie.porkbun.com.")
   , CNAME("hub", "39843493.group43.sites.hubspot.net.")
   , CNAME("blog", "hashnode.network.")

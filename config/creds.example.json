@@ -1,0 +1,14 @@
+{
+    "porkbun": {
+        "TYPE": "PORKBUN",
+        "api_key": "$PORKBUN_API_KEY",
+        "secret_key": "$PORKBUN_API_SECRET"
+    },
+    "bind": {
+      "TYPE": "BIND"
+    },
+    "notifications": {
+      "TYPE": "SLACK",
+      "slack_url": "$SLACK_WEBHOOK_URL"
+    }
+}

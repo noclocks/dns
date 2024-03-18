@@ -13,12 +13,16 @@
 
 ### Configuration
 
+- Add creds.example.json to config/
 - Fix LF
 - Refactor path to types definition
 - Migrate types to config folder
 
 ### Documentation
 
+- Add techstack files
+- Add docs/decisions files
+- Add default docs/ files
 - Add commands to examples
 - Refactor README
 - Add badges to README
@@ -30,6 +34,7 @@
 
 ### Features
 
+- Add medium A records
 - Add vercel TXT verification
 - Add custom stripe "pay" subdomain
 - Add amazon verification TXT record

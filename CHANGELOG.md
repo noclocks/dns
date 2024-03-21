@@ -8,11 +8,13 @@
 
 ### Bug Fixes
 
+- Fix typescript tripple slash directive
 - Fix typo in dependabot.yml
 - Fix records for mailchimp
 
 ### Configuration
 
+- Add vscode spellilng dict
 - Add creds.example.json to config/
 - Fix LF
 - Refactor path to types definition
@@ -34,6 +36,8 @@
 
 ### Features
 
+- Add new TXT records for Stripe and Vercel
+- Add new CNAME records for Stripe
 - Add medium A records
 - Add vercel TXT verification
 - Add custom stripe "pay" subdomain

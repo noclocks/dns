@@ -38,4 +38,6 @@ D("noclocks.dev", REG_NONE
   , TXT("@", "amazon-business-verification=1229ee0236ee3c28b825288e96e890beaad42a4a461d7a0eb65537601da42912")
   , TXT("_acme-challenge.pay", "d9uRKsP6foqYEgijjeBA1MB50wa4KW4NNe1BQE5-EP4")
   , TXT("_vercel", "vc-domain-verify=noclocks.dev,a2b5da3a50a19754c1e0")
+  , TXT("_vercel", "vc-domain-verify=www.noclocks.dev,2b1841e6fdcd5c8bbb74")
+  , TXT("@", "stripe-verification=89f4a41b52e121c2857c7989fa0edea55106bec6c43be66692ce13c3fd826707")
 );

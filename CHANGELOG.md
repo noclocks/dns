@@ -36,6 +36,7 @@
 
 ### Features
 
+- Add new cname record for testimonials sub-domain
 - Add new TXT records for Stripe and Vercel
 - Add new CNAME records for Stripe
 - Add medium A records

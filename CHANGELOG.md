@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 
+- Change testimonials to testimonial
 - Fix typescript tripple slash directive
 - Fix typo in dependabot.yml
 - Fix records for mailchimp

@@ -25,7 +25,7 @@ D("noclocks.dev", REG_NONE
   , CNAME("lzwub5fb3bv3v772nfrqoui6lezjdcxa._domainkey", "lzwub5fb3bv3v772nfrqoui6lezjdcxa.dkim.custom-email-domain.stripe.com.")
   , CNAME("ad3ak4dqkd3micxscovcihwulfyajce5._domainkey", "ad3ak4dqkd3micxscovcihwulfyajce5.dkim.custom-email-domain.stripe.com.")
   , CNAME("bounce", "custom-email-domain.stripe.com.")
-  , CNAME("testimonials", "cname.testimonials.to.")
+  , CNAME("testimonials", "cname.testimonial.to.")
   , MX("@", 1, "fwd1.porkbun.com.")
   , MX("@", 1, "fwd2.porkbun.com.")
   , TXT("@", "v=spf1 include:_spf.porkbun.com ~all")

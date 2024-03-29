@@ -23,7 +23,7 @@ At No Clocks, we have configured email forwarding aliases to forward email sent 
 
 This allows us to both receive and respond to emails sent to any of the aliases.
 
-Additionally, we have set up some short-hand versions of our full, personal email addresses for convenience. For example, emails sent to [pat@noclocks.dev](mailto:pat@noclocks.dev) will be forwarded to [patrick.howard@noclocks.dev](mailto:patrick.howars@noclocks.dev] and emails sent to [jimmy@noclocks.dev](mailto:jimmy@noclocks.dev) will be forwarded to [jimmy.briggs@noclocks.dev](mailto:jimmy.briggs@noclocks.dev).
+Additionally, we have set up some short-hand versions of our full, personal email addresses for convenience. For example, emails sent to [pat@noclocks.dev](mailto:pat@noclocks.dev) will be forwarded to <patrick.howars@noclocks.dev> and emails sent to [jimmy@noclocks.dev](mailto:jimmy@noclocks.dev) will be forwarded to <jimmy.briggs@noclocks.dev>.
 
 ### Graphical Representation
 

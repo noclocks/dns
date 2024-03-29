@@ -37,7 +37,7 @@ graph LR
       dev[dev@noclocks.dev]
       feedback[feedback@noclocks.dev]
       hello[hello@noclocks.dev]
-      help[help@@noclocks.dev]
+      help[help@noclocks.dev]
       legal[legal@noclocks.dev]
       news[news@noclocks.dev]
       privacy[privacy@noclocks.dev]

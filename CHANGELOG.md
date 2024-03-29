@@ -23,6 +23,7 @@
 
 ## Documentation
 
+- Fix email address links ([4a5e9fe](https://github.com/noclocks/dns/commit/4a5e9fef5a8a693458af4d9bd9d6c0b6eb8e1803))  - (Jimmy Briggs)
 - Add various md docs ([08f2e3d](https://github.com/noclocks/dns/commit/08f2e3d283a5821a34da8180cef5226b567fac19))  - (Jimmy Briggs)
 - Add email-forwarding documentation ([ce7bbad](https://github.com/noclocks/dns/commit/ce7bbad9fc7bc9c309afee5c9e5da49b8b396c3c))  - (Jimmy Briggs)
 - Add techstack files ([d4b71a8](https://github.com/noclocks/dns/commit/d4b71a8cdd09cb943c2fc5a6031125bbbeeca60c))  - (Jimmy Briggs)

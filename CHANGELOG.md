@@ -23,6 +23,7 @@
 
 ## Documentation
 
+- Fix typo ([b9f2323](https://github.com/noclocks/dns/commit/b9f232327a52e9d6dad21563b273ea1a793ffdef))  - (Jimmy Briggs)
 - Sync changelog.md ([d7c72a5](https://github.com/noclocks/dns/commit/d7c72a5a4ca18f525e01bb96310dc24e744164ab))  - (Jimmy Briggs)
 - Fix email address links ([4a5e9fe](https://github.com/noclocks/dns/commit/4a5e9fef5a8a693458af4d9bd9d6c0b6eb8e1803))  - (Jimmy Briggs)
 - Add various md docs ([08f2e3d](https://github.com/noclocks/dns/commit/08f2e3d283a5821a34da8180cef5226b567fac19))  - (Jimmy Briggs)

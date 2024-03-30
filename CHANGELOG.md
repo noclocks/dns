@@ -66,6 +66,7 @@
 
 ## Refactoring
 
+- Refactor changelog.yml ([a7973c3](https://github.com/noclocks/dns/commit/a7973c30e95d2fffd60fd1dc8209d8080578447d))  - (Jimmy Briggs)
 - Refactor main dnsconfig ([2408980](https://github.com/noclocks/dns/commit/24089806b9c7077df3fb12b2f8f93fd07971d6e2))  - (Jimmy Briggs)
 - Alter dnsconfig ([f72f637](https://github.com/noclocks/dns/commit/f72f637fe0f3e59fde2a7fdbbe196b383fb65a81))  - (Jimmy Briggs)
 - Cleanup ([c0a9e3d](https://github.com/noclocks/dns/commit/c0a9e3d8e6f9b794dc2a412b882e5745c52dbe9a))  - (Jimmy Briggs)

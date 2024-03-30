@@ -42,6 +42,7 @@
 
 ## Features
 
+- Add Google Workspace TXT record ([8ed0a89](https://github.com/noclocks/dns/commit/8ed0a8973083bff0de822aabbd21647b8640314c))  - (Patrick Howard)
 - Add new cname record for testimonials sub-domain ([594c75d](https://github.com/noclocks/dns/commit/594c75dcc90e3703081cbf8ca9f5874dc311ac59))  - (Jimmy Briggs)
 - Add new TXT records for Stripe and Vercel ([5c53be7](https://github.com/noclocks/dns/commit/5c53be74ca77d546e858b54979ba287289114ffc))  - (Jimmy Briggs)
 - Add new CNAME records for Stripe ([08fb419](https://github.com/noclocks/dns/commit/08fb4192ed3950498ecb0ff0db7819721dabcf73))  - (Jimmy Briggs)

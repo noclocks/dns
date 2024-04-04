@@ -42,6 +42,7 @@
 
 ## Features
 
+- Add openai domain verification txt record ([8c8542a](https://github.com/noclocks/dns/commit/8c8542a4fa4c57b6d964dc413399a82baa30645d))  - (Jimmy Briggs)
 - Remove DMARC TXT record and update default_.domainkey record ([b2cfbb0](https://github.com/noclocks/dns/commit/b2cfbb04404ca795e36ff7de8da4c18360400fa7))  - (Jimmy Briggs)
 - Add Google Workspace TXT record ([8ed0a89](https://github.com/noclocks/dns/commit/8ed0a8973083bff0de822aabbd21647b8640314c))  - (Patrick Howard)
 - Add new cname record for testimonials sub-domain ([594c75d](https://github.com/noclocks/dns/commit/594c75dcc90e3703081cbf8ca9f5874dc311ac59))  - (Jimmy Briggs)

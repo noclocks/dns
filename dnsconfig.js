@@ -26,9 +26,8 @@ D("noclocks.dev", REG_NONE
   , CNAME("ad3ak4dqkd3micxscovcihwulfyajce5._domainkey", "ad3ak4dqkd3micxscovcihwulfyajce5.dkim.custom-email-domain.stripe.com.")
   , CNAME("bounce", "custom-email-domain.stripe.com.")
   , CNAME("testimonials", "cname.testimonial.to.")
-  , MX("@", 1, "fwd1.porkbun.com.")
-  , MX("@", 1, "fwd2.porkbun.com.")
-  , TXT("@", "v=spf1 include:_spf.porkbun.com ~all")
+  , MX("@", 1, "smtp.google.com.")
+  , TXT("@", "v=spf1 include:_spf.google.com ~all")
   , TXT("default._domainkey", "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDYsugL19bSGrFmBaj5D7mebgTI4CJbEodRIOoPetQmRGWwACeoKj3IQsI0f8Yyx8j9u6Q9IUIFJZ4TNnRP2aQHwC74O7gzA/GpNKsGHDUGPFH5f61DRj29QcmrYGTPwZPKf9zvJw4jl9vZihGJJh86zVgotMfivPQIF+8KHly3BwIDAQAB")
   , TXT("_acme-challenge", "YfcZoPb1JoXtiwUP0k4aimMlw712-NxzrrIsxMAJJtY")
   , TXT("_acme-challenge", "duFW0ARxb60Rd6snfskR9b4db08jaoGVrM_dGY-PUcA")
@@ -41,4 +40,5 @@ D("noclocks.dev", REG_NONE
   , TXT("_vercel", "vc-domain-verify=www.noclocks.dev,2b1841e6fdcd5c8bbb74")
   , TXT("@", "stripe-verification=89f4a41b52e121c2857c7989fa0edea55106bec6c43be66692ce13c3fd826707")
   , TXT("@", "google-site-verification=VLlDxf4pO-GZ4oe2YSGplYGhKYEoMwIeSUiHzjMJd4s")
+  , TXT("@", "openai-domain-verification=dv-WDNa7wSBc2RN0lM0rlnVs25c")
 );

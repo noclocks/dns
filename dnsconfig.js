@@ -41,4 +41,5 @@ D("noclocks.dev", REG_NONE
   , TXT("_vercel", "vc-domain-verify=www.noclocks.dev,2b1841e6fdcd5c8bbb74")
   , TXT("@", "stripe-verification=89f4a41b52e121c2857c7989fa0edea55106bec6c43be66692ce13c3fd826707")
   , TXT("@", "google-site-verification=VLlDxf4pO-GZ4oe2YSGplYGhKYEoMwIeSUiHzjMJd4s")
+  , TXT("@", "openai-domain-verification=dv-WDNa7wSBc2RN0lM0rlnVs25c")
 );

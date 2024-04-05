@@ -23,6 +23,7 @@
 
 ## Documentation
 
+- ADR - update 003-docker.md ([82565aa](https://github.com/noclocks/dns/commit/82565aa08e73192bed0efa866d3ed65043ac7341))  - (Jimmy Briggs)
 - ADR - Update and rename 002-dnscontrol-vs-terraform.md to 002-dnscontrol.md ([5ff59aa](https://github.com/noclocks/dns/commit/5ff59aa6c01553afb253ff2f4872e3e8835e06c7))  - (Jimmy Briggs)
 - Update ADR for 001-porkbun.md ([aa8b327](https://github.com/noclocks/dns/commit/aa8b327e99f425d0f78b0aa31bd4200daf69c971))  - (Jimmy Briggs)
 - New ADR - 004-google-workspace.md ([dfe8667](https://github.com/noclocks/dns/commit/dfe866798950025e1387befa2b7952cd748607b0))  - (Jimmy Briggs)

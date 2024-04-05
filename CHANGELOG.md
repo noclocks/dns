@@ -23,6 +23,7 @@
 
 ## Documentation
 
+- Update ADR for 001-porkbun.md ([aa8b327](https://github.com/noclocks/dns/commit/aa8b327e99f425d0f78b0aa31bd4200daf69c971))  - (Jimmy Briggs)
 - New ADR - 004-google-workspace.md ([dfe8667](https://github.com/noclocks/dns/commit/dfe866798950025e1387befa2b7952cd748607b0))  - (Jimmy Briggs)
 - Add analytics override for mkdocs ([384ad83](https://github.com/noclocks/dns/commit/384ad835ce0e67aed2449f703a4bd0dbb216508b))  - (Jimmy Briggs)
 - Fix typo ([b9f2323](https://github.com/noclocks/dns/commit/b9f232327a52e9d6dad21563b273ea1a793ffdef))  - (Jimmy Briggs)

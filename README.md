@@ -12,8 +12,7 @@
 [![Rollback DNS Configuration](https://github.com/noclocks/dns/actions/workflows/rollback.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/rollback.yml)
 
 [![Automate Changelog](https://github.com/noclocks/dns/actions/workflows/changelog.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/changelog.yml)
-[![Deploy GitHub Pages](https://github.com/noclocks/dns/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/jekyll-gh-pages.yml)
-[![pages-build-deployment](https://github.com/noclocks/dns/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/noclocks/dns/actions/workflows/pages/pages-build-deployment)
+[![MkDocs Deploy GitHub Pages](https://github.com/noclocks/dns/actions/workflows/mkdocs-deploy.yml/badge.svg)](https://github.com/noclocks/dns/actions/workflows/mkdocs-deploy.yml)
 <!-- BADGES:END -->
 
 ## Contents

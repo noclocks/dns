@@ -32,31 +32,31 @@ Here is a graphical representation of our email forwarding strategy flow:
 ```mermaid
 graph LR
     subgraph "Email Aliases"
-      admin[admin@noclocks.dev]
-      contact[contact@noclocks.dev]
-      dev[dev@noclocks.dev]
-      feedback[feedback@noclocks.dev]
-      hello[hello@noclocks.dev]
-      help[help@noclocks.dev]
-      legal[legal@noclocks.dev]
-      news[news@noclocks.dev]
-      privacy[privacy@noclocks.dev]
-      sales[sales@noclocks.dev]
-      schedule[schedule@noclocks.dev]
-      store[store@noclocks.dev]
-      support[support@noclocks.dev]
-      team[team@noclocks.dev]
-      test[test@noclocks.dev]
+      admin["admin@noclocks.dev"]
+      contact["contact@noclocks.dev"]
+      dev["dev@noclocks.dev"]
+      feedback["feedback@noclocks.dev"]
+      hello["hello@noclocks.dev"]
+      help["help@noclocks.dev"]
+      legal["legal@noclocks.dev"]
+      news["news@noclocks.dev"]
+      privacy["privacy@noclocks.dev"]
+      sales["sales@noclocks.dev"]
+      schedule["schedule@noclocks.dev"]
+      store["store@noclocks.dev"]
+      support["support@noclocks.dev"]
+      team["team@noclocks.dev"]
+      test["test@noclocks.dev"]
     end
 
     subgraph ra["Root Alias"]
-      root[contact@noclocks.dev]
+      root["contact@noclocks.dev"]
     end
 
     subgraph "Team Members"
 
-      jimmybriggs[jimmy.briggs@noclocks.dev]
-      patrickhoward[patrick.howard@noclocks.dev]
+      jimmybriggs["jimmy.briggs@noclocks.dev"]
+      patrickhoward["patrick.howard@noclocks.dev"]
 
     end
 

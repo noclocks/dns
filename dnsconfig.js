@@ -28,6 +28,7 @@ D("noclocks.dev", REG_NONE
   , CNAME("testimonials", "cname.testimonial.to.")
   , MX("@", 1, "smtp.google.com.")
   , TXT("@", "v=spf1 include:_spf.google.com ~all")
+  , TXT("google._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnxb49YRvvMIjYWCEkGS8uRyi2jFfJYwuA4/b59aMAraFcJjeB+Xx6MvhAVpCe2/Zh/QGPtaAFbsluKJPTzW4qnddz85WVurrdIhxgVeyr417kPlYu1t8GbGQ1MQ53J4cPxs3x7beCLNbfXOF16o3wektAKb9Ap9oEioFysB9ingRLju+xGzpCii3vSFeDbYBYnheSzgPpo7fw5eQbnEN8iHu1XUQCunSxC0pOD8dWdM6pgXZ2UR3zehE+jjwtlNgz216+wUVn5E1CELk4fPqbMM0lhXFBUyAceH0sx4Zbo09ix74cOU34OlNxvdCUgQYNYCEBe7psW9hesbSiev8twIDAQAB")
   , TXT("default._domainkey", "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDYsugL19bSGrFmBaj5D7mebgTI4CJbEodRIOoPetQmRGWwACeoKj3IQsI0f8Yyx8j9u6Q9IUIFJZ4TNnRP2aQHwC74O7gzA/GpNKsGHDUGPFH5f61DRj29QcmrYGTPwZPKf9zvJw4jl9vZihGJJh86zVgotMfivPQIF+8KHly3BwIDAQAB")
   , TXT("_acme-challenge", "YfcZoPb1JoXtiwUP0k4aimMlw712-NxzrrIsxMAJJtY")
   , TXT("_acme-challenge", "duFW0ARxb60Rd6snfskR9b4db08jaoGVrM_dGY-PUcA")

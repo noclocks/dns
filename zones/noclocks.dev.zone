@@ -1,15 +1,38 @@
 $ORIGIN noclocks.dev.
 $TTL 600
-@                IN MX    1 fwd1.porkbun.com.
-                 IN MX    1 fwd2.porkbun.com.
-           300   IN TXT   "v=spf1 include:_spf.porkbun.com ~all"
+@                IN MX    1 smtp.google.com.
+                 IN TXT   "amazon-business-verification=1229ee0236ee3c28b825288e96e890beaad42a4a461d7a0eb65537601da42912"
+                 IN TXT   "google-site-verification=8esyvYnZaJ9-JUcC81RlatPuElBjXcGziiqYiq8FJw8"
+                 IN TXT   "google-site-verification=VLlDxf4pO-GZ4oe2YSGplYGhKYEoMwIeSUiHzjMJd4s"
+                 IN TXT   "openai-domain-verification=dv-WDNa7wSBc2RN0lM0rlnVs25c"
+                 IN TXT   "stripe-verification=89f4a41b52e121c2857c7989fa0edea55106bec6c43be66692ce13c3fd826707"
+                 IN TXT   "v=spf1 include:_spf.google.com ~all"
 ;@                IN ALIAS lixie.porkbun.com.
 *                IN CNAME lixie.porkbun.com.
 _acme-challenge  IN TXT   "YfcZoPb1JoXtiwUP0k4aimMlw712-NxzrrIsxMAJJtY"
                  IN TXT   "duFW0ARxb60Rd6snfskR9b4db08jaoGVrM_dGY-PUcA"
-_dmarc     300   IN TXT   "v=DMARC1; p=quarantine; rua=mailto:25f8c5e6@mxtoolbox.dmarc-report.com; ruf=mailto:25f8c5e6@forensics.dmarc-report.com; fo=1"
-default._domainkey 300 IN TXT "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD23fAyoPbewQ6QAdP6FN30wbbEtWfpSvee3SR1CGqZc3YREGfXwPVi6R5cyR+qwx0DdJUuo5yOlFJ6rXyJUI6PSJ63sq5eNqKU+n6cqLlDaN4VxjS/NmLw+6szGeH52PhfrwRSyI2yMAnSszqvIO8YvN/bieqhIzcQjt8lQtWkJQIDAQAB"
+_dmarc           IN TXT   "v=DMARC1; p=none; rua=mailto:25f8c5e6@mxtoolbox.dmarc-report.com; ruf=mailto:25f8c5e6@forensics.dmarc-report.com; fo=1"
+ad3ak4dqkd3micxscovcihwulfyajce5._domainkey IN CNAME ad3ak4dqkd3micxscovcihwulfyajce5.dkim.custom-email-domain.stripe.com.
+cgktxy47vh5wl4ghp5hdgk6tnmy62zbl._domainkey IN CNAME cgktxy47vh5wl4ghp5hdgk6tnmy62zbl.dkim.custom-email-domain.stripe.com.
+cwisojmcg2hxnv5mu6p75xj554z25eoa._domainkey IN CNAME cwisojmcg2hxnv5mu6p75xj554z25eoa.dkim.custom-email-domain.stripe.com.
+gkyumb4mjcb52t3ijd7ri3cvxcsn5wzd._domainkey IN CNAME gkyumb4mjcb52t3ijd7ri3cvxcsn5wzd.dkim.custom-email-domain.stripe.com.
+google._domainkey IN TXT  "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnxb49YRvvMIjYWCEkGS8uRyi2jFfJYwuA4/b59aMAraFcJjeB+Xx6MvhAVpCe2/Zh/QGPtaAFbsluKJPTzW4qnddz85WVurrdIhxgVeyr417kPlYu1t8GbGQ1MQ53J4cPxs3x7beCLNbfXOF16o3wektAKb9Ap9oEioFysB9ingRLju+xGzpCii3vSFeDbYBY" "nheSzgPpo7fw5eQbnEN8iHu1XUQCunSxC0pOD8dWdM6pgXZ2UR3zehE+jjwtlNgz216+wUVn5E1CELk4fPqbMM0lhXFBUyAceH0sx4Zbo09ix74cOU34OlNxvdCUgQYNYCEBe7psW9hesbSiev8twIDAQAB"
+k2._domainkey    IN CNAME dkim2.mcsv.net.
+k3._domainkey    IN CNAME dkim3.mcsv.net.
+lzwub5fb3bv3v772nfrqoui6lezjdcxa._domainkey IN CNAME lzwub5fb3bv3v772nfrqoui6lezjdcxa.dkim.custom-email-domain.stripe.com.
+manc63vpfqdyzxpefcyuhkc6a226isin._domainkey IN CNAME manc63vpfqdyzxpefcyuhkc6a226isin.dkim.custom-email-domain.stripe.com.
+_github-challenge-noclocks-org IN TXT "5b7bfb8c3a"
 _github-pages-challenge-noclocks IN TXT "8c88c3f5791a75585aedc0a0e821fb"
-blog             IN CNAME 39843493.group43.sites.hubspot.net.
+_vercel          IN TXT   "vc-domain-verify=noclocks.dev,a2b5da3a50a19754c1e0"
+                 IN TXT   "vc-domain-verify=www.noclocks.dev,2b1841e6fdcd5c8bbb74"
+blog             IN CNAME hashnode.network.
+bounce           IN CNAME custom-email-domain.stripe.com.
 docs             IN CNAME noclocks.github.io.
+hub              IN CNAME 39843493.group43.sites.hubspot.net.
+medium           IN A     162.159.152.4
+                 IN A     162.159.153.4
+pay              IN CNAME hosted-checkout.stripecdn.com.
+_acme-challenge.pay IN TXT "d9uRKsP6foqYEgijjeBA1MB50wa4KW4NNe1BQE5-EP4"
+store            IN CNAME shops.myshopify.com.
+testimonials     IN CNAME cname.testimonial.to.
 

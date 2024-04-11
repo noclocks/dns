@@ -47,6 +47,7 @@
 
 ## Features
 
+- Add backup CSV and TSV zone files ([89439e6](https://github.com/noclocks/dns/commit/89439e62f11ac53e5aa488cc0e5a344e4f183d7f))  - (Jimmy Briggs)
 - Add openai domain verification txt record ([8c8542a](https://github.com/noclocks/dns/commit/8c8542a4fa4c57b6d964dc413399a82baa30645d))  - (Jimmy Briggs)
 - Remove DMARC TXT record and update default_.domainkey record ([b2cfbb0](https://github.com/noclocks/dns/commit/b2cfbb04404ca795e36ff7de8da4c18360400fa7))  - (Jimmy Briggs)
 - Add Google Workspace TXT record ([8ed0a89](https://github.com/noclocks/dns/commit/8ed0a8973083bff0de822aabbd21647b8640314c))  - (Patrick Howard)
@@ -73,6 +74,7 @@
 
 ## Refactoring
 
+- Fixed DNS records for email and ordered config alphabetically ([28679bf](https://github.com/noclocks/dns/commit/28679bf15851c22baef2272eab18f08916e9ed80))  - (Jimmy Briggs)
 - Refactor changelog.yml ([a7973c3](https://github.com/noclocks/dns/commit/a7973c30e95d2fffd60fd1dc8209d8080578447d))  - (Jimmy Briggs)
 - Refactor main dnsconfig ([2408980](https://github.com/noclocks/dns/commit/24089806b9c7077df3fb12b2f8f93fd07971d6e2))  - (Jimmy Briggs)
 - Alter dnsconfig ([f72f637](https://github.com/noclocks/dns/commit/f72f637fe0f3e59fde2a7fdbbe196b383fb65a81))  - (Jimmy Briggs)

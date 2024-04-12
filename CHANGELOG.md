@@ -47,6 +47,7 @@
 
 ## Features
 
+- Add CNAME records for google workspace tools ([13f59c5](https://github.com/noclocks/dns/commit/13f59c588b53946e4394b3a29c0096d81fc49b0f))  - (Jimmy Briggs)
 - Add backup CSV and TSV zone files ([89439e6](https://github.com/noclocks/dns/commit/89439e62f11ac53e5aa488cc0e5a344e4f183d7f))  - (Jimmy Briggs)
 - Add openai domain verification txt record ([8c8542a](https://github.com/noclocks/dns/commit/8c8542a4fa4c57b6d964dc413399a82baa30645d))  - (Jimmy Briggs)
 - Remove DMARC TXT record and update default_.domainkey record ([b2cfbb0](https://github.com/noclocks/dns/commit/b2cfbb04404ca795e36ff7de8da4c18360400fa7))  - (Jimmy Briggs)

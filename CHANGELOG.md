@@ -8,6 +8,7 @@
 
 ## Bug Fixes
 
+- Fix infisical CNAME record in dnsconfig.js ([c22a41f](https://github.com/noclocks/dns/commit/c22a41f4c26d3de1f9c96f7eee2fa3ff880d66f7))  - (Jimmy Briggs)
 - Change testimonials to testimonial ([b119ab1](https://github.com/noclocks/dns/commit/b119ab118e6637e25b51b39b61b573be0c18d858))  - (Jimmy Briggs)
 - Fix typescript tripple slash directive ([a206f8d](https://github.com/noclocks/dns/commit/a206f8d3d79fd778b758f7d80ecddf91877cafd0))  - (Jimmy Briggs)
 - Fix typo in dependabot.yml ([7443cb7](https://github.com/noclocks/dns/commit/7443cb7e651ab2498f9cdea905992f69df5febf5))  - (Jimmy Briggs)

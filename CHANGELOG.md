@@ -47,6 +47,7 @@
 
 ## Features
 
+- Add secrets infisical CNAME record ([b693812](https://github.com/noclocks/dns/commit/b69381201e12a727f6f13af308767482943d88ce))  - (Jimmy Briggs)
 - Add CNAME record for envshare ([5178fc6](https://github.com/noclocks/dns/commit/5178fc6b36cbd4b43bd8485dd12c90f711709859))  - (Jimmy Briggs)
 - Add envshare sub-domain vercel verification ([ce2d04a](https://github.com/noclocks/dns/commit/ce2d04a3c2802da6ea513408321b333e8d2ca852))  - (Jimmy Briggs)
 - Temporary `CNAME` for `bastien` subdomain ([2a0e7e2](https://github.com/noclocks/dns/commit/2a0e7e2f28604b2f79e79449bf45f30cdf19342a))  - (Patrick Howard)

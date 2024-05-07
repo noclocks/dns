@@ -49,6 +49,7 @@
 
 ## Features
 
+- Add resend DNS records ([8e0a59a](https://github.com/noclocks/dns/commit/8e0a59a6ae4f74cfff90fdcd04acdea9abddfe89))  - (Jimmy Briggs)
 - Add docuseal sub-domain ([401c13b](https://github.com/noclocks/dns/commit/401c13b69ad112ecdd1f9f74f60ea43a973790c9))  - (Jimmy Briggs)
 - Add analytics sub-domain for plausible ([bd4916a](https://github.com/noclocks/dns/commit/bd4916ac4c76c63e661b93fecd582f5f208a2fe2))  - (Jimmy Briggs)
 - Add secrets infisical CNAME record ([b693812](https://github.com/noclocks/dns/commit/b69381201e12a727f6f13af308767482943d88ce))  - (Jimmy Briggs)

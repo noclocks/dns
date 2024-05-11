@@ -25,7 +25,8 @@ D("noclocks.dev", REG_NONE
 	, CNAME("lzwub5fb3bv3v772nfrqoui6lezjdcxa._domainkey", "lzwub5fb3bv3v772nfrqoui6lezjdcxa.dkim.custom-email-domain.stripe.com.")
 	, CNAME("manc63vpfqdyzxpefcyuhkc6a226isin._domainkey", "manc63vpfqdyzxpefcyuhkc6a226isin.dkim.custom-email-domain.stripe.com.")
 	// Redirect `testimonials.noclocks.dev` to `senja.io/p/noclocks/r/testimonials`
-	, CNAME("testimonials", "senja.io.")
+	// , CNAME("testimonials", "senja.io.")
+	, CNAME("testimonials", "cname.testimonial.to.")
 	, CNAME("bounce", "custom-email-domain.stripe.com.")
 	, CNAME("hub", "39843493.group43.sites.hubspot.net.")
 	, CNAME("blog", "hashnode.network.")

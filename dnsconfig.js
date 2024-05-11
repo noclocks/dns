@@ -9,8 +9,9 @@ D("noclocks.dev", REG_NONE
   , DefaultTTL(600)
   , A("medium", "162.159.152.4")
 	, A("medium", "162.159.153.4")
-	, ALIAS("@", "lixie.porkbun.com.")
-	, CNAME("*", "lixie.porkbun.com.")
+	// Comment out Porkbun's default `ALIAS`/`CNAME` records
+	// , ALIAS("@", "lixie.porkbun.com.")
+	// , CNAME("*", "lixie.porkbun.com.")
 	, A("@", "216.239.32.21")
 	, A("@", "216.239.34.21")
 	, A("@", "216.239.36.21")

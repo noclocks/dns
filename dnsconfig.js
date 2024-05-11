@@ -10,7 +10,6 @@ D("noclocks.dev", REG_NONE
   , A("medium", "162.159.152.4")
 	, A("medium", "162.159.153.4")
 	, ALIAS("@", "lixie.porkbun.com.")
-	, CNAME("*", "lixie.porkbun.com.")
 	, CNAME("dev", "ghs.googlehosted.com.")
 	, CNAME("ad3ak4dqkd3micxscovcihwulfyajce5._domainkey", "ad3ak4dqkd3micxscovcihwulfyajce5.dkim.custom-email-domain.stripe.com.")
 	, CNAME("cgktxy47vh5wl4ghp5hdgk6tnmy62zbl._domainkey", "cgktxy47vh5wl4ghp5hdgk6tnmy62zbl.dkim.custom-email-domain.stripe.com.")

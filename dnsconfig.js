@@ -17,8 +17,8 @@ D(
   , DefaultTTL(600)
 
   // Porkbun's default `ALIAS`/`CNAME` records
-  , ALIAS("@", "lixie.porkbun.com.")
-  , CNAME("*", "lixie.porkbun.com.")
+  // , ALIAS("@", "lixie.porkbun.com.")
+  // , CNAME("*", "lixie.porkbun.com.")
 
   // Set up the root domain A records
   , A("@", "216.239.32.21")

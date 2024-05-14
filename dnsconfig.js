@@ -175,7 +175,7 @@ D(
     // alignmentSPF: "r",
     // alignmentDKIM: "strict",
     rua: [
-      "mailto:mailto:w0qdgxol@ag.us.dmarcian.com", // DMARC Aggregate Reports (RUA)
+      "mailto:w0qdgxol@ag.us.dmarcian.com", // DMARC Aggregate Reports (RUA)
     ],
     ruf: [
       "mailto:w0qdgxol@fr.us.dmarcian.com", // DMARC Forensic Reports (RUF)

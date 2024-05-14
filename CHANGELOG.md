@@ -17,6 +17,7 @@
 
 ## Configuration
 
+- Refresh and update spfcache.json ([1985439](https://github.com/noclocks/dns/commit/19854395584f91a393de09ebb66102682c28e320))  - (Jimmy Briggs)
 - Add vscode spellilng dict ([2977c19](https://github.com/noclocks/dns/commit/2977c198f0bf86b91f11dd76918203961ad73ef1))  - (Jimmy Briggs)
 - Add creds.example.json to config/ ([29a476b](https://github.com/noclocks/dns/commit/29a476b7d5cbcde8364ca4a041a072c1e5504e55))  - (Jimmy Briggs)
 - Fix LF ([64e55e5](https://github.com/noclocks/dns/commit/64e55e534981e7677c2b431b816f08da4baa8cdd))  - (Jimmy Briggs)
@@ -49,6 +50,7 @@
 
 ## Features
 
+- Revamp dnsconfig.js ([fc10d18](https://github.com/noclocks/dns/commit/fc10d18cb09fdd341f8dcdf855c60647ed33e53c))  - (Jimmy Briggs)
 - Add resend records ([8f76e83](https://github.com/noclocks/dns/commit/8f76e830df762b8d75d28d7836d036fc8939ebcb))  - (Jimmy Briggs)
 - Add resend DNS records ([8e0a59a](https://github.com/noclocks/dns/commit/8e0a59a6ae4f74cfff90fdcd04acdea9abddfe89))  - (Jimmy Briggs)
 - Add docuseal sub-domain ([401c13b](https://github.com/noclocks/dns/commit/401c13b69ad112ecdd1f9f74f60ea43a973790c9))  - (Jimmy Briggs)

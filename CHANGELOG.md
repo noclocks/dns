@@ -8,6 +8,7 @@
 
 ## Bug Fixes
 
+- Fix syntax of DMARC ([f5a095b](https://github.com/noclocks/dns/commit/f5a095b52a28d945dfd9da93bfdbfbdc73554b23))  - (Jimmy Briggs)
 - Remove porkbun ALIAS and A records ([dd3a4ff](https://github.com/noclocks/dns/commit/dd3a4ffd3440c08c1b361fba161383de90d14bbe))  - (Jimmy Briggs)
 - Fix docuseal to include period in dnsconfig.js ([086bd92](https://github.com/noclocks/dns/commit/086bd92563d06aa2b800407aad202b076180a5b2))  - (Jimmy Briggs)
 - Fix infisical CNAME record in dnsconfig.js ([c22a41f](https://github.com/noclocks/dns/commit/c22a41f4c26d3de1f9c96f7eee2fa3ff880d66f7))  - (Jimmy Briggs)

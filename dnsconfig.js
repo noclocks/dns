@@ -170,11 +170,10 @@ D(
 
   // TXT Records - DMARC for `@`
   , DMARC_BUILDER({
-    policy: "reject",
-    subdomainPolicy: "none",
-    percent: 100,
-    alignmentSPF: "r",
-    alignmentDKIM: "strict",
+    policy: "quarantine",
+    percent: 1,
+    // alignmentSPF: "r",
+    // alignmentDKIM: "strict",
     rua: [
       "mailto:mailto:w0qdgxol@ag.us.dmarcian.com", // DMARC Aggregate Reports (RUA)
     ],

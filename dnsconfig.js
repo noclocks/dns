@@ -114,6 +114,9 @@ D(
   // CNAME Records - Development
   ,CNAME("dev", "ghs.googlehosted.com.")
 
+  // CNAME Records - Feedback Sub-Domain
+  ,CNAME("feedback", "cname.frill.co.")
+
   // MX Records - Google Workspace
   , MX("@", 1, "smtp.google.com.")
 

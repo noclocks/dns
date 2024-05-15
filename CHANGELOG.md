@@ -8,6 +8,7 @@
 
 ## Bug Fixes
 
+- Fix records ([e469996](https://github.com/noclocks/dns/commit/e469996c6f2c85710d0d03d8c4592506e434dfb7))  - (Jimmy Briggs)
 - Remove duplicate "mailto:" in DMARC ([ed8f37a](https://github.com/noclocks/dns/commit/ed8f37a00a0fe575882942beb94d07e434441237))  - (Jimmy Briggs)
 - Fix syntax of DMARC ([f5a095b](https://github.com/noclocks/dns/commit/f5a095b52a28d945dfd9da93bfdbfbdc73554b23))  - (Jimmy Briggs)
 - Remove porkbun ALIAS and A records ([dd3a4ff](https://github.com/noclocks/dns/commit/dd3a4ffd3440c08c1b361fba161383de90d14bbe))  - (Jimmy Briggs)

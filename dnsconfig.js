@@ -118,9 +118,9 @@ D(
   ,CNAME("feedback", "cname.frill.co.")
 
   // CNAME Records - Frill Email
-  , CNAME("frill12631.noclocks.dev", "u25497065.wl066.sendgrid.net.")
-  , CNAME("frl._domainkey.noclocks.dev", "frl.domainkey.u25497065.wl066.sendgrid.net.")
-  , CNAME("frl2._domainkey.noclocks.dev", "frl2.domainkey.u25497065.wl066.sendgrid.net.")
+  , CNAME("frill12631", "u25497065.wl066.sendgrid.net.")
+  , CNAME("frl._domainkey", "frl.domainkey.u25497065.wl066.sendgrid.net.")
+  , CNAME("frl2._domainkey", "frl2.domainkey.u25497065.wl066.sendgrid.net.")
 
   // MX Records - Google Workspace
   , MX("@", 1, "smtp.google.com.")

@@ -53,6 +53,7 @@
 
 ## Features
 
+- Add frill email dns records ([e97e4aa](https://github.com/noclocks/dns/commit/e97e4aa2d3adc5e4c42cee3f79574c8fa38d0697))  - (Jimmy Briggs)
 - Add feedback CNAME sub-domain DNS record in dnsconfig.js ([1bc73a1](https://github.com/noclocks/dns/commit/1bc73a13acc4d5f0bc15becaf6016ddd86d566f9))  - (Jimmy Briggs)
 - Revamp dnsconfig.js ([fc10d18](https://github.com/noclocks/dns/commit/fc10d18cb09fdd341f8dcdf855c60647ed33e53c))  - (Jimmy Briggs)
 - Add resend records ([8f76e83](https://github.com/noclocks/dns/commit/8f76e830df762b8d75d28d7836d036fc8939ebcb))  - (Jimmy Briggs)

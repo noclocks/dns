@@ -158,7 +158,7 @@ D(
       // "include:mailgun.org", // Mailgun (forwards to GSuite)
       "include:servers.mcsv.net", // Mailchimp
       // "include:sendgrid.net", // SendGrid
-      "~all",
+      "-all",
     ],
     flatten: [
       "amazonses.com", // Rationale: Amazon SES is used by Resend

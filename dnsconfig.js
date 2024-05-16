@@ -153,10 +153,10 @@ D(
     parts: [
       "v=spf1",
       "include:_spf.google.com", // GSuite
-      // "include:amazonses.com", // Amazon SES (Resend)
-      // "include:stripe.com", // Stripe
+      "include:amazonses.com", // Amazon SES (Resend)
+      "include:stripe.com", // Stripe
       // "include:mailgun.org", // Mailgun (forwards to GSuite)
-      // "include:servers.mcsv.net", // Mailchimp
+      "include:servers.mcsv.net", // Mailchimp
       // "include:sendgrid.net", // SendGrid
       "~all",
     ],

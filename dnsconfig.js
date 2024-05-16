@@ -181,18 +181,15 @@ D(
   , DMARC_BUILDER({
     policy: "reject",
     percent: 100,
-    alignmentSPF: "r",
-    alignmentDKIM: "strict",
+    // alignmentSPF: "r",
+    // alignmentDKIM: "strict",
     rua: [
       "mailto:w0qdgxol@ag.us.dmarcian.com", // DMARC Aggregate Reports (RUA)
     ],
     ruf: [
       "mailto:w0qdgxol@fr.us.dmarcian.com", // DMARC Forensic Reports (RUF)
     ],
-    failureOptions: {
-      SPF: false,
-      DKIM: true,
-    },
+    failureOptions: "1"
   })
 
   // TXT Records - MTA-STS

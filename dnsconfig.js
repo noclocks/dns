@@ -153,16 +153,17 @@ D(
     parts: [
       "v=spf1",
       "include:_spf.google.com", // GSuite
-      "include:amazonses.com", // Amazon SES (Resend)
-      "include:stripe.com", // Stripe
+      // "include:amazonses.com", // Amazon SES (Resend)
+      // "include:stripe.com", // Stripe
       // "include:mailgun.org", // Mailgun (forwards to GSuite)
       "include:servers.mcsv.net", // Mailchimp
       // "include:sendgrid.net", // SendGrid
       "-all",
     ],
     flatten: [
-      "amazonses.com", // Rationale: Amazon SES is used by Resend
-      "stripe.com", // Rationale: Stripe is used by custom email domains
+      "servers.mcsv.net",
+      // "amazonses.com", // Rationale: Amazon SES is used by Resend
+      // "stripe.com", // Rationale: Stripe is used by custom email domains
     ],
   })
 

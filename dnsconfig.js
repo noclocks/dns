@@ -179,16 +179,20 @@ D(
 
   // TXT Records - DMARC for `@`
   , DMARC_BUILDER({
-    policy: "quarantine",
-    percent: 1,
-    // alignmentSPF: "r",
-    // alignmentDKIM: "strict",
+    policy: "reject",
+    percent: 100,
+    alignmentSPF: "r",
+    alignmentDKIM: "strict",
     rua: [
       "mailto:w0qdgxol@ag.us.dmarcian.com", // DMARC Aggregate Reports (RUA)
     ],
     ruf: [
       "mailto:w0qdgxol@fr.us.dmarcian.com", // DMARC Forensic Reports (RUF)
     ],
+    failureOptions: {
+      SPF: false,
+      DKIM: true,
+    },
   })
 
   // TXT Records - MTA-STS

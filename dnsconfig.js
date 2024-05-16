@@ -99,23 +99,23 @@ D(
   , CNAME("k3._domainkey", "dkim3.mcsv.net.")
 
   // CNAME Records - Stripe Checkout
-  ,CNAME("pay", "hosted-checkout.stripecdn.com.")
+  , CNAME("pay", "hosted-checkout.stripecdn.com.")
 
   // CNAME Records - GitHub Pages
-  ,CNAME("docs", "noclocks.github.io.")
+  , CNAME("docs", "noclocks.github.io.")
 
   // CNAME Records - Shopify
-  ,CNAME("store", "shops.myshopify.com.")
-  ,CNAME("devstore", "shops.myshopify.com.")
+  , CNAME("store", "shops.myshopify.com.")
+  , CNAME("devstore", "shops.myshopify.com.")
 
   // CNAME Records - Client - BastienLaw
-  ,CNAME("bastien", "ghs.googlehosted.com.")
+  , CNAME("bastien", "ghs.googlehosted.com.")
 
   // CNAME Records - Development
-  ,CNAME("dev", "ghs.googlehosted.com.")
+  , CNAME("dev", "ghs.googlehosted.com.")
 
   // CNAME Records - Feedback Sub-Domain
-  ,CNAME("feedback", "cname.frill.co.")
+  , CNAME("feedback", "cname.frill.co.")
 
   // CNAME Records - Frill Email
   , CNAME("frill12631", "u25497065.wl066.sendgrid.net.")
@@ -153,18 +153,18 @@ D(
     parts: [
       "v=spf1",
       "include:_spf.google.com", // GSuite
+      "include:servers.mcsv.net", // Mailchimp
       // "include:amazonses.com", // Amazon SES (Resend)
       // "include:stripe.com", // Stripe
       // "include:mailgun.org", // Mailgun (forwards to GSuite)
-      "include:servers.mcsv.net", // Mailchimp
       // "include:sendgrid.net", // SendGrid
       "-all",
     ],
-    flatten: [
-      "servers.mcsv.net",
+    // flatten: [
+      // "servers.mcsv.net",
       // "amazonses.com", // Rationale: Amazon SES is used by Resend
       // "stripe.com", // Rationale: Stripe is used by custom email domains
-    ],
+    // ],
   })
 
   // TXT Records - SPF for `send`

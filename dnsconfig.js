@@ -122,6 +122,8 @@ D(
   , CNAME("frl._domainkey", "frl.domainkey.u25497065.wl066.sendgrid.net.")
   , CNAME("frl2._domainkey", "frl2.domainkey.u25497065.wl066.sendgrid.net.")
 
+  , CNAME("website", "noclocks.b12sites.com.")
+
   // MX Records - Google Workspace
   , MX("@", 1, "smtp.google.com.")
 

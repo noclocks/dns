@@ -124,6 +124,8 @@ D(
 
   , CNAME("website", "noclocks.b12sites.com.")
 
+  , CNAME("accounts.store", "shops.myshopify.com.")
+
   // MX Records - Google Workspace
   , MX("@", 1, "smtp.google.com.")
 

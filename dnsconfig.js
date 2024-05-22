@@ -221,6 +221,10 @@ D(
     "@",
     "google-site-verification=8esyvYnZaJ9-JUcC81RlatPuElBjXcGziiqYiq8FJw8"
   )
+  , TXT(
+    "@",
+    "google-site-verification=VkAy-7pk6nihqr1X2sF3ev2G8NxEMh6ge72Y4hQq89I"
+  )
 
   // TXT Records - Amazon Business
   , TXT(

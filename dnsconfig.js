@@ -128,6 +128,8 @@ D(
 
   , CNAME("documenso", "uou6ptnc.up.railway.app.")
 
+  , CNAME("devdocs", "cname.vercel-dns.com.")
+
   // MX Records - Google Workspace
   , MX("@", 1, "smtp.google.com.")
 
@@ -251,6 +253,9 @@ D(
 
   // TXT Records - TLS Reporting
   , TXT("_smtp._tls", "v=TLSRPTv1; rua=mailto:w0qdgxol@tls.us.dmarcian.com")
+
+  // TXT Records - Mintlify
+  , TXT("_vercel", "vc-domain-verify=devdocs.noclocks.dev,afcca416a51e43d21092")
 );
 
 // DEPRECATED:

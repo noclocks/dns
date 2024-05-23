@@ -126,6 +126,8 @@ D(
 
   , CNAME("accounts.store", "shops.myshopify.com.")
 
+  , CNAME("documenso", "uou6ptnc.up.railway.app.")
+
   // MX Records - Google Workspace
   , MX("@", 1, "smtp.google.com.")
 

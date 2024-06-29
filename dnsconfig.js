@@ -193,6 +193,12 @@ D(
   // TXT Records - MTA-STS
   , TXT("_mta-sts", "v=STSv1; id=20190425085703", TTL(3600))
 
+  // TXT Records - BIMI (Brand Indicators for Message Identification)
+  , TXT(
+    "default._bimi",
+    "v=BIMI1; l=https://beta.emaildojo.io/tool-bimi/static/storage/svgs/noclocks-icon-tinyps.svg; a=;"
+  )
+
   // TXT Records - Resend
   , TXT(
     "resend._domainkey",

@@ -206,7 +206,7 @@ D(
   // TXT Records - BIMI (Brand Indicators for Message Identification)
   , TXT(
     "default._bimi",
-    "v=BIMI1; l=https://beta.emaildojo.io/tool-bimi/static/storage/svgs/noclocks-icon-tinyps.svg; a=;"
+    "v=BIMI1; l=https://raw.githubusercontent.com/noclocks/dns/ad0bbf1713120e258de6bec5a8573f2fa57ec2f4/docs/assets/img/noclocks-icon-tinyps.svg; a=;"
   )
 
   // TXT Records - Resend

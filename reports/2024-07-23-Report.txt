@@ -1,0 +1,12 @@
+[
+  {
+    "domain": "noclocks.dev",
+    "corrections": 4,
+    "provider": "porkbun"
+  },
+  {
+    "domain": "noclocks.dev",
+    "corrections": 0,
+    "registrar": "none"
+  }
+]

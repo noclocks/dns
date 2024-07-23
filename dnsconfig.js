@@ -37,7 +37,7 @@ D(
   , A("medium", "162.159.153.4")
 
   // Set MTA-STS A record
-  , A("mta-sts", "34.149.121.105")
+  , CNAME("mta-sts", "d2v764jk99zpo5.cloudfront.net.")
 
   // CNAME Records - Google Workspace
   , CNAME("ggroups", "ghs.googlehosted.com.")

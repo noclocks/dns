@@ -130,6 +130,8 @@ D(
 
   , CNAME("devdocs", "cname.vercel-dns.com.")
 
+  , CNAME("thchill", "shops.myshopify.com.")
+
   // MX Records - Google Workspace
   , MX("@", 1, "smtp.google.com.")
 

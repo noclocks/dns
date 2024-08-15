@@ -76,17 +76,17 @@ D(
   , CNAME("bounce", "custom-email-domain.stripe.com.")
 
   // CNAME Records - Selfhosted (Render.com)
-  , CNAME("docuseal", "docuseal-h7bm.onrender.com.")
+  //, CNAME("docuseal", "docuseal-h7bm.onrender.com.")
 
   // CNAME Records - Selfhosted (Railway)
-  , CNAME("infisical", "r0fdqqto.up.railway.app.")
-  , CNAME("analytics", "ofv54ogz.up.railway.app.")
+  //, CNAME("infisical", "r0fdqqto.up.railway.app.")
+  //, CNAME("analytics", "ofv54ogz.up.railway.app.")
 
   // CNAME Records - Testimonials
   , CNAME("testimonials", "cname.testimonial.to.")
 
   // CNAME Records - Hubspot
-  , CNAME("hub", "39843493.group43.sites.hubspot.net.")
+  // , CNAME("hub", "39843493.group43.sites.hubspot.net.")
 
   // CNAME Records - Hashnode
   , CNAME("blog", "hashnode.network.")
@@ -109,28 +109,31 @@ D(
   , CNAME("devstore", "shops.myshopify.com.")
 
   // CNAME Records - Client - BastienLaw
-  , CNAME("bastien", "ghs.googlehosted.com.")
+  // , CNAME("bastien", "ghs.googlehosted.com.")
 
   // CNAME Records - Development
-  , CNAME("dev", "ghs.googlehosted.com.")
+  // , CNAME("dev", "ghs.googlehosted.com.")
 
   // CNAME Records - Feedback Sub-Domain
-  , CNAME("feedback", "cname.frill.co.")
+  // , CNAME("feedback", "cname.frill.co.")
 
   // CNAME Records - Frill Email
-  , CNAME("frill12631", "u25497065.wl066.sendgrid.net.")
-  , CNAME("frl._domainkey", "frl.domainkey.u25497065.wl066.sendgrid.net.")
-  , CNAME("frl2._domainkey", "frl2.domainkey.u25497065.wl066.sendgrid.net.")
+  // , CNAME("frill12631", "u25497065.wl066.sendgrid.net.")
+  // , CNAME("frl._domainkey", "frl.domainkey.u25497065.wl066.sendgrid.net.")
+  // , CNAME("frl2._domainkey", "frl2.domainkey.u25497065.wl066.sendgrid.net.")
 
+  // CNAME - Development Website
   , CNAME("website", "noclocks.b12sites.com.")
 
   , CNAME("accounts.store", "shops.myshopify.com.")
 
-  , CNAME("documenso", "uou6ptnc.up.railway.app.")
+  // , CNAME("documenso", "uou6ptnc.up.railway.app.")
 
   , CNAME("devdocs", "cname.vercel-dns.com.")
 
   , CNAME("thchill-dev", "shops.myshopify.com.")
+
+  //, CNAME("uptime", "
 
   // MX Records - Google Workspace
   , MX("@", 1, "smtp.google.com.")

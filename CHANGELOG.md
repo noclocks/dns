@@ -54,6 +54,7 @@
 
 ## Features
 
+- Add A record for b12 ([ac90e1b](https://github.com/noclocks/dns/commit/ac90e1bca152196a51e4b75c7455f0db0e3912d3))  - (Jimmy Briggs)
 - Migrate website.noclocks.dev -> www.noclocks.dev ([f457df3](https://github.com/noclocks/dns/commit/f457df355bb289cb7e902c80a5385d30acc34394))  - (Jimmy Briggs)
 - Cleanup unused CNAME records ([81c811f](https://github.com/noclocks/dns/commit/81c811ff70f7847bc90bd3ab1f818e1cf2d24d5c))  - (Jimmy Briggs)
 - Add TinyPS SVG for BIMI Logo ([ad0bbf1](https://github.com/noclocks/dns/commit/ad0bbf1713120e258de6bec5a8573f2fa57ec2f4))  - (Jimmy Briggs)

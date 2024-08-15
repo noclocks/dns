@@ -54,6 +54,7 @@
 
 ## Features
 
+- Cleanup unused CNAME records ([81c811f](https://github.com/noclocks/dns/commit/81c811ff70f7847bc90bd3ab1f818e1cf2d24d5c))  - (Jimmy Briggs)
 - Add TinyPS SVG for BIMI Logo ([ad0bbf1](https://github.com/noclocks/dns/commit/ad0bbf1713120e258de6bec5a8573f2fa57ec2f4))  - (Jimmy Briggs)
 - Add initial BIMI DNS TXT Record ([a59f1c8](https://github.com/noclocks/dns/commit/a59f1c841347054c95184efd12beb48e97f442cc))  - (Jimmy Briggs)
 - Add shopify customer accounts CNAME ([296f966](https://github.com/noclocks/dns/commit/296f9664edfdb0a6a76f3198e193fdf6e7357931))  - (Jimmy Briggs)

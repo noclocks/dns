@@ -122,8 +122,10 @@ D(
   // , CNAME("frl._domainkey", "frl.domainkey.u25497065.wl066.sendgrid.net.")
   // , CNAME("frl2._domainkey", "frl2.domainkey.u25497065.wl066.sendgrid.net.")
 
-  // CNAME - Development Website
+  // WEBSITE
   , CNAME("www", "noclocks.b12sites.com.")
+  , A("@", "52.22.145.238")
+ 
 
   , CNAME("accounts.store", "shops.myshopify.com.")
 

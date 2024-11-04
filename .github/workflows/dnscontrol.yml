@@ -28,7 +28,7 @@ jobs:
       
       - name: Check
         id: dnscontrol_check
-        uses: is-cool-me/dnscontrol-action@v4.11.0
+        uses: is-cool-me/dnscontrol-action@v4.13.0
         with:
           args: check
           config_file: 'dnsconfig.js'
@@ -44,7 +44,7 @@ jobs:
 
       - name: Preview
         id: dnscontrol_preview
-        uses: is-cool-me/dnscontrol-action@v4.11.0
+        uses: is-cool-me/dnscontrol-action@v4.13.0
         with:
           args: preview --notify
           config_file: 'dnsconfig.js'
@@ -80,7 +80,7 @@ jobs:
       
       - name: Push
         id: dnscontrol_push
-        uses: is-cool-me/dnscontrol-action@v4.11.0
+        uses: is-cool-me/dnscontrol-action@v4.13.0
         with:
           args: push --notify --report ${{ env.REPORT_FILE }}
           config_file: 'dnsconfig.js'
